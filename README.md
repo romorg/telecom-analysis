@@ -1,13 +1,13 @@
-📘 Análisis de Clientes y Patrones de Uso — ConnectaTel
-
-🎯 Objetivo del Proyecto
-
-Este proyecto tiene como objetivo analizar el comportamiento de los usuarios de ConnectaTel para identificar segmentos de clientes, patrones de uso, outliers relevantes y oportunidades comerciales basadas en datos. El análisis se centra en variables como edad, mensajes, llamadas, minutos de llamadas, y en la creación de segmentos de uso y segmentos por edad.
-
+---📘 Análisis de Clientes y Patrones de Uso — ConnectaTel---
 ---
 
-📂 Datasets Utilizados
+🎯 Objetivo del Proyecto
+---
+Este proyecto tiene como objetivo analizar el comportamiento de los usuarios de ConnectaTel para identificar segmentos de clientes, patrones de uso, outliers relevantes y oportunidades comerciales basadas en datos. El análisis se centra en variables como edad, mensajes, llamadas, minutos de llamadas, y en la creación de segmentos de uso y segmentos por edad.
 
+
+📂 Datasets Utilizados
+---
 El proyecto utiliza tres archivos principales:
 
 • users_latam.csv - Contiene información demográfica y de registro de los usuarios.
@@ -16,8 +16,9 @@ El proyecto utiliza tres archivos principales:
 
 • plans.csv - Catálogo de planes disponibles (Básico y Premium).
 
----
+
 🔍 Etapas del Análisis
+---
 1. Carga y exploración inicial
 • Lectura de los datasets con pandas.
 • Revisión de estructura, tipos de datos y valores faltantes.
@@ -46,3 +47,41 @@ El proyecto utiliza tres archivos principales:
 7. Conclusiones accionables
 • Identificación de segmentos valiosos.
 • Recomendaciones comerciales basadas en patrones detectados.
+
+
+▶️ Cómo ejecutar el notebook
+---
+Para ejecutar el notebook incluido en este repositorio:
+Navega al archivo .ipynb dentro del repositorio.
+Haz clic en “Open in GitHub” para visualizarlo directamente, o selecciona “Download raw file” para descargarlo.
+Abre el archivo en tu entorno local usando Jupyter Notebook o Jupyter Lab.
+Asegúrate de tener instaladas las dependencias necesarias:
+pip install pandas seaborn matplotlib
+
+Ejecuta las celdas en orden para reproducir el análisis completo.
+---
+🔁 Guía breve de reproducción
+Descarga o clona el repositorio:
+git clone <URL-del-repositorio>
+
+Ubica los datasets en la carpeta data/:
+users_latam.csv
+usage.csv
+plans.csv
+
+Abre el notebook en tu entorno local:
+jupyter notebook
+
+Ejecuta las secciones en orden:
+Carga de datos
+Limpieza de registros inválidos
+Exploración descriptiva
+Histogramas y boxplots
+Detección de outliers con IQR
+Creación de segmentos (grupo_uso, grupo_edad)
+Visualizaciones
+Conclusiones finales
+Verifica las rutas de los archivos dentro del notebook para asegurar que coincidan con tu estructura local.
+Revisa los gráficos y tablas generadas para validar los resultados y conclusiones.
+
+---
